@@ -13,7 +13,7 @@ import(
 )
 
 func main() {
-	host := flag.String("h","127.0.0.1","host name or ip address")
+	host := flag.String("h","0.0.0.0","host name or ip address")
 	port := flag.Int("p", 8080, "port")
 	name := flag.String("n", "/request", "request root name")
 	flag.CommandLine.Parse(os.Args[1:])
