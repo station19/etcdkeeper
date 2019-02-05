@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>ETCD Keeper</title>
+	<title>ETCDv2 Manage</title>
 	<link rel="stylesheet" type="text/css" href="framework/easyui/themes/metro/easyui.css">
 	<link rel="stylesheet" type="text/css" href="framework/easyui/themes/icon.css">
 	<link rel="stylesheet" type="text/css" href="framework/custom/css/style.css">
@@ -15,13 +15,13 @@
 	<script type="text/javascript" src="framework/custom/js/common.js"></script>
 </head>
 <body>
-	<h2>ETCD Keeper</h2>
+	<h2>ETCDv2 Manage</h2>
 	<div class="noborder">
 		<input id="etcdAddr" class="easyui-textbox" data-options="prompt:'http://etcdhost:port/v2/keys',onChange:connect,iconCls:'icon-server',iconAlign:'left'" style="width:360px;height:30px;"/>
 	</div>
 	<div style="margin:20px 0;"></div>
 	<div id="elayout" class="easyui-layout" style="width:100%;height:550px;">
-		<div id="p" data-options="region:'west',tools:'#westTools'" title="Nodes" style="width:30%;padding:10px">
+		<div id="p" data-options="region:'west',tools:'#westTools'" title="Nodes (Key/Value)" style="width:30%;padding:10px">
 			<ul id="etree" class="easyui-tree"></ul>
 		</div>
 		<div data-options="region:'center',tools:'#centerTools',footer:'#footer'" title="/" spellcheck="false" style="padding:10px;overflow:hidden;">
