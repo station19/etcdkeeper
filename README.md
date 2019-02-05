@@ -11,7 +11,7 @@ vim httpserver.go
 
 #修改 etcdkeeper/index.html  (8080端口为etcdkeeper启动IP和端口,2379端口为 etcd的IP)
 vim etcdkeeper/index.html
-#	var serverBase = "http://10.0.0.109:8080/request?url=";
+# var serverBase = "http://10.0.0.109:8080/request?url=";
 # var etcdBase = "http://10.0.0.109:2379/v2/keys";
  
 cd etcdkeeper
