@@ -1,20 +1,20 @@
-## etcdkeeper
-* Lightweight etcd web client.
-* support etcd 2.x
-* Based easyui framework to achieve.(easyui license [easyui website](www.jeasyui.com))
-
-## Usage
-* Run httpserver.exe  
+##### 1, 安装golang
 ```
-  Usage of httpserver.exe:  
-  -h string  
-        host name or ip address (default "127.0.0.1", your machine addreess, not etcd address)
-  -p int
-        port (default 8080)
+yum install golang -y
 ```
-* Open your browser and enter the address. http://127.0.0.1:8080/etcdkeeper
+##### 2,编译go执行文件
+```
+# 修改IP地址和端口 etcdkeeper 
+# host := flag.String("h","0.0.0.0","host name or ip address")
+# port := flag.Int("p", 8080, "port")
 
-![image](https://github.com/evildecay/etcdkeeper/raw/master/screenshots/ui.png)
+cd etcdkeeper
+go build httpserver.go
+#启动
+./httpserver
+```
 
-## License
-MIT
+##### 访问 
+```
+http://10.0.0.109:8080/etcdkeeper
+```
