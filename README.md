@@ -4,6 +4,9 @@ yum install golang -y
 ```
 ##### 2,编译go执行文件
 ```
+git clone https://github.com/station19/etcdv2-webui.git
+cd etcdv2-webui
+
 # 修改IP地址和端口 (etcdkeeper启动IP和端口)
 vim httpserver.go
 # host := flag.String("h","0.0.0.0","host name or ip address")
