@@ -24,7 +24,7 @@ func main() {
 	if err != nil{
 		log.Fatal(err)
 	}
-	http.Handle("/v2_webui/", http.FileServer(http.Dir(wd))) // view static directory
+	http.Handle("/etcdkeeper/", http.FileServer(http.Dir(wd))) // view static directory
 
 	err = http.ListenAndServe(*host + ":" + strconv.Itoa(*port), nil)
 	if err != nil {
