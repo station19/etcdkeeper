@@ -26,8 +26,10 @@ http://10.0.0.109:8080/etcdkeeper
 ```
 
 ##### 设置
+```
 左侧 右键选择 create node
 Name:	127.0.0.1:555
 Dir:	FALSE
 TTL:	 (此处不填 留空, 填写后会导致 数据无故消失,保存后 默认值是 0)
 Value:	{"weight":1, "max_fails":2, "fail_timeout":30, "down":1}
+```
