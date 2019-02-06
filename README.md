@@ -1,4 +1,3 @@
-基于 源项目 https://github.com/ichiranakita/etcdkeeper 修改而来
 ##### 1, 安装golang
 ```
 yum install golang -y
