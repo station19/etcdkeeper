@@ -19,9 +19,10 @@ vim etcdkeeper/index.html
 # var etcdBase = "http://10.0.0.109:2379/v2/keys";
  
 cd etcdkeeper
-go build httpserver.go
+#go编译成可执行文件
+go build etcdv2_ui.go
 #启动
-./httpserver >/dev/null 2>&1 &
+./etcdv2_ui >/dev/null 2>&1 &
 ```
 
 ##### 访问 
