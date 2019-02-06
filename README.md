@@ -20,9 +20,9 @@ vim etcdkeeper/index.html
  
 cd etcdkeeper
 #go编译成可执行文件
-go build etcdv2_ui.go
+go build httpserver.go
 #启动
-./etcdv2_ui >/dev/null 2>&1 &
+./httpserver >/dev/null 2>&1 &
 ```
 
 ##### 访问 
