@@ -21,7 +21,7 @@ vim etcdkeeper/index.html
 cd etcdkeeper
 go build httpserver.go
 #启动
-./httpserver >/dev/null &
+./httpserver >/dev/null 2>&1 &
 ```
 
 ##### 访问 
